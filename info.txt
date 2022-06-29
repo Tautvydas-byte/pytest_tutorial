@@ -1,0 +1,28 @@
+pytest
+https://docs.pytest.org/en/7.1.x/getting-started.html
+https://www.youtube.com/watch?v=snDSB9b8v_E
+
+test1
+test_1
+
+test_1
+1_test
+
+pytest will run all files from current dir/ subdirec test_*.py or *_test.py
+
+-rA <- all info
+pytest -h or pytest -help <- documentation about all arguments
+
+-k "String" <- word which is in function name and will be activated
+
+-v <- it gives more info
+
+pytest -rA --junitxml="Report1.xml" <-all testing info to xml file as report
+
+https://pytest-html.readthedocs.io/en/latest/user_guide.html
+pytest --html=MyHTMLReport.html <- report as html file
+
+pytest test_markersdemo.py -m smoke
+pytest test_markersdemo.py -m "smoke or regression"
+pytest.ini <- https://docs.pytest.org/en/7.1.x/example/markers.html#registering-markers
+
